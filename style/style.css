@@ -4,10 +4,9 @@
     font-size: 16px;
     font-weight: normal;
 } */
-.body{
+body{
     font-family: 'DM Sans', sans-serif;
-    font-family: 'Mulish', sans-serif;
-}
+    }
 .conteiner{   
     max-width: 1440px;
     margin: 0 auto;
@@ -28,7 +27,6 @@
     margin-left: 49px;
 }
 .nav_link{
-    font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     font-size: 15px;
     line-height: 20px;
@@ -103,7 +101,6 @@
     display: inline-block;
 }
 .footer_link{
-    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
@@ -116,13 +113,12 @@
     transition: 300ms;
 }
 .footer_li:not(:first-of-type){
-   padding: 53px;
+   padding: 20px;
 }
 .subscribe{
     margin-bottom: 85px;
 }
 .subscribe_title{
-    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 50px;
     line-height: 57px;
@@ -131,7 +127,6 @@
     margin-bottom: 38px;
 }
 .input{
-    font-family: 'DM Sans', sans-serif;
     width: 302px;
     height: 60px;
     border: 1px solid #7087FF;
@@ -141,7 +136,6 @@
     margin-right: 39px;
 }
 .input::placeholder, .input{
-    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 22px;
@@ -155,7 +149,6 @@
     margin-bottom: 132px;
 }
 .plan_title{
-    font-family: 'DM Sans', sans-serif;
     font-weight:bold;
     font-size: 60px;
     line-height: 70px;
@@ -178,7 +171,6 @@
     box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
 }
 .item_text{
-    font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -0.562737px;
@@ -190,7 +182,6 @@
 }
 
 .item_titel{
-    font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 60px;
     line-height: 56px;  
@@ -221,3 +212,60 @@
     color: #FFFFFF;
     transition: 500ms;
 }
+
+@media screen and (max-width: 550px){
+       .conteiner {
+        max-width: 375px;
+    }
+    .header .nav, .header_button-conteiner{
+        display: none;
+    }
+    .header_flex{
+        justify-content: center;
+    }
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about_title{
+        line-height: 60px;
+        font-size: 60px;
+    }
+    .button{
+        width: 100%;
+    }
+    .button_transparent{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .about img{
+        width: 100%;
+    }
+    .subscribe{
+        flex-direction: column-reverse;
+    }
+    .input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .img_conteiner{
+        margin-top: 30px;
+    }
+    .plan_title{
+        text-align: center;
+    }
+    .plan_flex{
+        flex-direction: column;
+    }
+    .item:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    .item .button{
+        width: 80%;
+    }
+    .footer_flex{
+        flex-direction: column;
+    }
+
+}
+
